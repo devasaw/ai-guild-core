@@ -45,25 +45,12 @@ const HeroSection = () => {
         style={{ opacity }}
         className="relative z-10 container-premium text-center"
       >
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border/50 bg-card/50 backdrop-blur-sm mb-8"
-        >
-          <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          <span className="text-sm tracking-wide-custom uppercase text-muted-foreground font-medium">
-            Exclusive AI Community
-          </span>
-        </motion.div>
-
         {/* Main headline */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-syne text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight-custom mb-6"
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="font-syne text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight-custom mb-4"
         >
           <span className="block">Where Elite</span>
           <span className="block text-gradient">AI Minds</span>
@@ -74,8 +61,8 @@ const HeroSection = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-12"
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground font-light leading-relaxed mb-8"
         >
           A curated guild of AI researchers, engineers, and visionaries. 
           High-signal discussions. Real builders. Real outcomes.
@@ -85,7 +72,7 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <button className="btn-primary rounded-lg text-background font-syne font-semibold">
@@ -100,8 +87,8 @@ const HeroSection = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-          className="mt-20 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
+          transition={{ duration: 0.8, delay: 0.9 }}
+          className="mt-12 grid grid-cols-3 gap-8 max-w-2xl mx-auto"
         >
           {[
             { value: "500+", label: "Elite Members" },

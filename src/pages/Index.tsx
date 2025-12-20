@@ -17,11 +17,13 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-background">
-      {/* Sidebar */}
-      <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
+      {/* Sidebar - hidden on mobile */}
+      <div className="hidden md:block">
+        <Sidebar isOpen={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
+      </div>
 
       {/* Main content */}
-      <main className={`transition-all duration-300 ${sidebarOpen ? 'ml-[180px]' : 'ml-[180px]'}`}>
+      <main className={`transition-all duration-300 ${sidebarOpen ? 'md:ml-[180px]' : 'md:ml-[60px]'} ml-0`}>
         <HeroSection />
         <CompanyLogosSection />
         <EventsSection />
